@@ -24,7 +24,7 @@
         </div>
         <br>
         <div>
-            <button class="btn btn-success" id="btnLogin">Đăng nhập</button>
+            <button class="btn btn-success" id="btnLogin" onclick="Login()" >Đăng nhập</button>
         </div>
     </div>
 </body>
@@ -33,15 +33,15 @@
 
 <script>
     function Login(){
-        var username = document.getElementById('txtUsername').value();
-        var password = document.getElementById('txtPassword').value();
+        var username = document.getElementById('txtUsername').value;
+        var password = document.getElementById('txtPassword').value;
 
         if( (username == 'admin') && (password == 'admin') ) 
         {
             alert('Đăng nhập thành công');
         }
         else{
-            alert('đăng nhập thất bại');
+            alert('Đăng nhập thất bại');
         }
 
     }
