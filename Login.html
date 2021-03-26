@@ -30,3 +30,20 @@
 </body>
 
 </html>
+
+<script>
+    function Login(){
+        var username = document.getElementById('txtUsername').value();
+        var password = document.getElementById('txtPassword').value();
+
+        if( (username == 'admin') && (password == 'admin') ) 
+        {
+            alert('Đăng nhập thành công');
+        }
+        else{
+            alert('đăng nhập thất bại');
+        }
+
+    }
+
+</script>
